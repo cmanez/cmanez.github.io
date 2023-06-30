@@ -3,10 +3,15 @@
     box-sizing: border-box;
     font-family: 'JetBrains Mono', monospace
 }
+section{
+    display: flex;
+    flex-direction: row;
+}
 
 .container{
     display: flex;
     justify-content: center;
+    flex-direction: row;
 
 }
 
@@ -18,7 +23,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 250px 0;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
@@ -33,6 +37,21 @@
 .main_calc .cmanez span{
     font-size: 15px;
 }
+
+.last_results{
+    background-color: rgba(0, 0, 0, 0.15);
+    margin-left: 50px ;
+    height: 200px;
+    align-self: center;
+    padding: 10px;
+}
+.last_results input{
+    height: 180px;
+    z-index: 9999;
+    text-align: center;
+    word-wrap: break-word;
+}
+
 .output_border{
     background-color: rgba(0, 0, 0, 0.15);
     border: 1px solid black;
@@ -64,12 +83,13 @@
     margin: 0 auto;
     margin-bottom: 10px ;
 }
-input{
+.main_calc input{
     height: 34px;
     width: 202px;
     margin-bottom: 10px;
     margin-top: -76px;
     text-align: center;
+    
 }
 
 .result{
