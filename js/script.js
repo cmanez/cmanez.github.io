@@ -40,7 +40,7 @@ buttonAct.forEach(element =>{
   
 })
 
-let getResult = document.querySelector('.go')
+const getResult = document.querySelector('.go')
 getResult.addEventListener('click', () => {
     try{
         output.value = eval(input.value)

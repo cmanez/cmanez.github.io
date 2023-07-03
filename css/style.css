@@ -7,6 +7,9 @@
     box-sizing: border-box;
     font-family: 'JetBrains Mono', monospace
 }
+body{
+    background: url('../images/math_bg.jpeg') center center/cover;
+}
 section{
     margin-top: 100px;
     display: flex;
@@ -31,7 +34,7 @@ section{
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
-    
+    background: rgb(199, 203, 201);
 }
 .main_calc .cmanez{
     position: absolute;
@@ -44,17 +47,26 @@ section{
 }
 
 .last_results{
-    background-color: rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    background: rgb(199, 203, 201);
     margin-left: 50px ;
     height: 200px;
     align-self: center;
     padding: 10px;
 }
-.last_results input{
+
+.last_results button{
+    max-height: 36px;
+    margin-right: 10px;
+}
+.last_results .last_result{
+    resize: none;
     height: 180px;
     z-index: 9999;
     text-align: center;
     word-wrap: break-word;
+    padding: 10px;
 }
 
 .output_border{
@@ -70,7 +82,7 @@ section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 160px;
+    width: 200px;
     height: 100px;
     
 }
@@ -104,10 +116,10 @@ section{
 }
 
 .button_number{
-    width:50px;
+    width: 50px;
     height: 35px;
-    padding-right: 10px;
     font-size: 20px;
+    margin: 6px;
 }
 .button_action{
     font-size: 20px;
