@@ -83,9 +83,9 @@ section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 245px;
+    width: 200px;
     height: 100px;
-    
+    margin: 6px;
 }
 /* .button_zero{
     display: flex;
@@ -162,5 +162,8 @@ button{
     .last_results{
         margin: 0 auto;
         margin-top: 40px;
+    }
+    .button_number{
+        margin: 2px;
     }
     }
